@@ -57,9 +57,14 @@ WIN_COMBINATIONS = [
   end
   
   def winner(board)
+<<<<<<< HEAD
     win = won?(board)
     if win
       if win.all?{|player| board[player] == "X"}
+=======
+    if won?(board) != false
+      if won?(board).all?{|player| player == "X"}
+>>>>>>> 80d24a68b1a3371f95fc8ac5d056dd11b43fb37d
         return "X"
       else
         return "O"
